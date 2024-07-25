@@ -80,7 +80,7 @@ let newColor;
 button.addEventListener('click',(e)=>{
     e.preventDefault();
     newColor=document.querySelector('.newColorInput').value;
-    con.style.backgroundColor="red"
+    con.style.backgroundColor=newColor
 });
 
     
