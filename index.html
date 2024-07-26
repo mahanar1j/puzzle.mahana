@@ -13,6 +13,7 @@
     <!-- outLine css here -->
      <style>
 
+
 *::before,
 *::after{
     margin: 0%;
@@ -23,143 +24,30 @@
 
 }
 body{
-   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; 
-   /* font-family: "Petit Formal Script", cursive; */
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     font-size: 18px;
     width: 100vw;
     height: 100vh;
-    /* background-color: black; */
+    background-color: black;
 }
-
-/* custom color csss */
-.inputGroup{
-    margin-left: 9px;
-}
-
-.chngBg .inputGroup .newColorInput{
-    background-color: #fff;
-    width: 200px;
-    height: 20px;
-    border-radius:  25px 0 0 25px ;
-    border: none;
-    padding: 0 5px ;
-    outline: none;
-    cursor: pointer;
-    font-size: 11px;
-  
-}
-
-.chngBg .inputGroup .btn{
-   
-    color: #fff;
-    width: 90px;
-    height: 20px;
-    border-radius: 0 18px 18px 0;
-    margin-left: -3px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    background-color:teal;
-    padding-bottom: 2px;
-    margin-bottom: 2rem;
-    font-family: "Petit Formal Script", cursive;
-   
-    
-}
-.chngBg .inputGroup .btn:hover{
-    background-color: green;
-}
-h1 span{
-    text-transform: capitalize;
-    font-family: "Petit Formal Script", cursive;
-    background-color: #ffffff62;
-    padding: 5px 10px;
-    border-radius: 8px;
-}
-h3{
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    margin-top: 5px;
-    text-transform: capitalize;
-    font-family: "Petit Formal Script", cursive;
-    background-color: rgba(255, 255, 255, 0.755);
-    border-radius: 7px;
-    box-shadow: 1px 1px 1px 3px ;
-    border: none;
-  
-   
-   
-    
-    /* font-weight: 500; */
-    
-}
-h2{
-    display:inline-block;
-    background-color:indigo;
-    text-align: center;
-    margin-left: 0px;
-    padding: 5px 6px;
-    border-radius: 5px;
-    margin-top: 5px;
-    color: white;
-    box-shadow: 2px 2px 2px 2px;
-    font-size: 20px;
-    font-family: "Petit Formal Script", cursive;
-    
-}
-
-.jui {
-    background-color: #4d204c9e;
-   display: grid;
-    grid-template-columns: repeat(6,1fr);
-  
-}
- .jui code{
-    font-family: "Petit Formal Script", cursive;
-  /* font-weight: 400;
-  font-style: normal; */
-    font-weight: bold;
-    text-shadow: 2px 2px red;
-    -webkit-text-stroke: 0.1px red;
-    color: white;
-    margin-left: 5px;
-   
-    font-size: 16px;
-    opacity: 0.06;
- /* color:#ffffffb8;  */
- /* text-shadow: 5px 2px #ffee55; */
- margin-top: 5px;
-    
-  
-
-}
-
-#rain-bow-section{
-    position: relative;
-    padding-top: 5rem;
-    width:500px ;
-    margin-left: 30%;
-   
-}
-#mahana{
-    position:absolute;
-    width:550px ;
-    overflow: hidden;
-    margin-left: 30%;
-}
-
 .container{
     width: 500px;
     margin: auto;
 }
-#rainBowColor{
+@media only screen and (max-width: 400px) {
+	.container { 
+	  width: 450px;
+    margin: auto;
+	}
+    
+
+	#rainBowColor{
    
     margin: 40px auto;
 }
 #rainBowColorEx{
    
-    margin-left: 50px ;
-    text-transform: capitalize;
+    margin-left: 0px ;
 }
 
 #btn{
@@ -175,13 +63,6 @@ h2{
     font-weight: 600;
     text-shadow: #56fdef64;
 
-}
-h4{
-    width: 160px;
-    height: 20px;
-    margin-left: 40%;
-    text-align: center;
-    background-color: #ffffff;
 }
 .rain-bow{
     width:350px ;
@@ -325,6 +206,175 @@ h4{
     z-index: 999;
     text-align: center;
 }
+#rainBowColor{
+   
+    margin: 40px auto;
+}
+#rainBowColorEx{
+   
+    margin-left: 0px ;
+}
+
+#btn{
+    margin: 1.5rem 0;
+  
+    padding: 10px 5px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+     background:linear-gradient(rgb(255, 0, 0),rgb(66,77,6),rgb(66,77,6),rgb(51, 255, 0),rgb(0, 47, 255));
+    
+    color: aliceblue;
+    font-weight: 600;
+    text-shadow: #56fdef64;
+
+}
+.rain-bow{
+    width:350px ;
+    height: 350px;
+    border-radius: 50%;
+ 
+    position: relative;
+
+}
+.rain-bow-single1{
+    width: 350px;
+    height: 350px;
+    background-color:  #ffffff;
+   
+    border: 3px solid gray;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 994;
+}
+.rain-bow-single2{
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff;
+    border: 3px solid gray;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 995;
+}
+.rain-bow-single3{
+    width: 250px;
+    height: 250px;
+    background-color: #ffffff;
+    border: 3px solid gray;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 996;
+}
+.rain-bow-single4{
+    width: 200px;
+    height: 200px;
+    background-color:  #ffffff;
+    border: 3px solid gray;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 996;
+}
+.rain-bow-single5{
+    width: 150px;
+    height: 150px;
+    background-color: #ffffff;
+    border: 3px solid gray;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 997;
+}
+.rain-bow-single6{
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    border: 3px solid gray;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 998;
+    text-align: center;
+}
+.rain-bow-single7{
+    width: 50px;
+    height: 50px;
+    background-color:  #ffffff;
+    border: 3px solid gray;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 999;
+    text-align: center;
+}
+/* .rain-bowexample =====================================*/
+
+.rain-bow-single8{
+    width: 350px;
+    height: 350px;
+    background-color:red;
+   
+    border: 3px solid gray;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 994;
+}
+.rain-bow-single9{
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+    border: 3px solid gray;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 995;
+}
+.rain-bow-single10{
+    width: 250px;
+    height: 250px;
+    background-color: yellow;
+    border: 3px solid gray;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 996;
+}
+.rain-bow-single11{
+    width: 200px;
+    height: 200px;
+    background-color:  green;
+    border: 3px solid gray;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 996;
+}
+.rain-bow-single12{
+    width: 150px;
+    height: 150px;
+    background-color:blue;
+    border: 3px solid gray;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 997;
+}
+.rain-bow-single13{
+    width: 100px;
+    height: 100px;
+    background-color: indigo;
+    border: 3px solid gray;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 998;
+    text-align: center;
+}
+.rain-bow-single14{
+    width: 50px;
+    height: 50px;
+    background-color: purple;
+    border: 3px solid gray;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 999;
+    text-align: center;
+}
+
+
+
+
 
 
 
